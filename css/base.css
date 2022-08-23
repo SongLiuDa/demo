@@ -1,0 +1,494 @@
+
+@font-face{
+  font-family: 'Fontquan-XinYiGuanHeiTi';
+  src : 
+  url('../fonts/Fontquan-XinYiGuanHeiTi-Regular-402258.woff2') format("woff2"),
+  url('../fonts/Fontquan-XinYiGuanHeiTi-Regular-402258.woff') format("woff"),
+  url('../fonts/Fontquan-XinYiGuanHeiTi-Regular-402258.ttf') format("truetype");
+  font-style: normal;
+}
+@font-face{
+  font-family: 'SourceHanSansCN-Medium';
+  src : 
+  url('../fonts/SourceHanSansCN-Medium.woff2') format("woff2"),
+  url('../fonts/SourceHanSansCN-Medium.woff') format("woff"),
+  url('../fonts/SourceHanSansCN-Medium.ttf') format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "open-sans";
+  src: url("../fonts/open-sans-700.woff2") format("woff2"),
+    url("../fonts/open-sans-700.woff") format("woff"),
+    url("../fonts/open-sans-700.eot") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "open-sans";
+  src: url("../fonts/open-sans-600.woff2") format("woff2"),
+    url("../fonts/open-sans-600.woff") format("woff"),
+    url("../fonts/open-sans-600.eot") format("opentype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "open-sans";
+  src: url("../fonts/open-sans-400.woff2") format("woff2"),
+    url("../fonts/open-sans-400.woff") format("woff"),
+    url("../fonts/open-sans-400.eot") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+
+body {
+  overflow-x: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family:'open-sans', Raleway, sans-serif;
+  color:#333;
+  font-size: 16px;
+  background: #fff;
+  line-height: 1;
+}   
+
+html {
+  height: 100%;
+  /* font-size: calc(100vw / 7.5); */
+  box-sizing: border-box;
+}
+
+h1, h2, h3,h4{
+  font-size: 32px;
+  font-weight:normal;
+}
+
+body,
+html,
+h1,
+h3,
+h2,
+h4,
+h5,
+h6,
+p,
+dl,
+dd,
+ul,
+li,
+ol,
+td,
+form,
+input,
+fieldset,
+legend {
+	margin: 0;
+	padding: 0;
+}
+
+input {
+  background: none;
+  outline: none;
+  border: none;
+  color: #fff;
+  -webkit-appearance: none;
+  appearance:none;
+}
+
+
+/* 自动填充样式修改 */
+input:-webkit-autofill { 
+	box-shadow: 0 0 0px 1000px white  inset !important; 
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+  font-size: 14px;
+  color:#D8D8D8;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder{
+  font-size: 14px;
+  color:#D8D8D8;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder{
+  font-size: 14px;
+  color:#D8D8D8;
+}
+
+li {
+	list-style: none;
+}
+i{font-style:normal}
+
+a {
+	text-decoration: none;
+}
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+img{
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+button{
+	border: none;
+  outline: none !important;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 0;
+}
+
+a,
+a:focus,
+a:hover {
+	cursor: pointer;
+	color: inherit;
+	text-decoration: none;
+}
+
+div:focus {
+	outline: none;
+}
+
+/* common class */
+
+/* banner-title: font-family  */
+.banner_title_fa{
+  font-family: 'Fontquan-XinYiGuanHeiTi';
+}
+
+/* 板块title: font-family  */
+.m_title_fa{
+  font-weight: 700;
+}
+.btn_fa{
+  font-family: 'SourceHanSansCN-Medium';
+}
+._container{
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+@media (min-width: 1200px){
+  ._container{
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1360px){
+  ._container{
+    max-width: 1240px;
+  }
+}
+
+/* btn */
+.my_button {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space:nowrap;
+  text-align: center;
+  padding: 0 24px;
+  font-family: 'SourceHanSansCN-Medium';
+  border-radius: 20px;
+  transition: all .2s;
+  background: #fff;
+}
+.my_button.primary{
+  min-width: 160px;
+  box-shadow: 0px 0px 21px 0px rgba(255, 249, 228, 0.43);
+  background: #F7B500 !important;
+  color:#fff;
+}
+.my_button .btn_text{
+  line-height: inherit;
+}
+.my_button.blue{
+  min-width: 160px;
+  background: #00A6FD !important;
+  color:#fff;
+}
+
+.my_button.skyblue{
+  min-width: 160px;
+  background: #00FDFF !important;
+  color:#0031BF;
+}
+/* .my_button.primary:hover{
+  background: rgba(247,181,0,0.9) !important;
+} */
+.my_button.light{
+  border: 1px solid #F7B500 !important;
+  color: #F7B500;
+}
+/* .my_button.light:hover{
+  border-color: rgba(247,181,0,0.9) !important;
+  color: rgba(247,181,0,0.9);
+} */
+
+
+/* display */
+.dn { display: none; }
+.di { display: inline; }
+.db { display: block; }
+.dib { display: inline-block; } 
+
+/* line-height */
+.lh36 { line-height: 36px; }
+.lh38 { line-height: 38px; }
+.lh40 { line-height: 40px; }
+
+/* margin */
+.mt10 { margin-top: 10px; }
+.mr10 { margin-right: 10px; }
+.mb10 { margin-bottom: 10px; }
+.ml10 { margin-left: 10px; }
+
+
+/* padding */
+.pt10 { padding-top: 10px; }
+.pr10 { padding-right: 10px; }
+.pb10 { padding-bottom: 10px; }
+.pl10 { padding-left: 10px; }
+
+/* border */
+.bd1{
+  border: 1px solid #333;
+}
+.bdt1{
+  border-top: 1px solid #333;
+}
+.bdb1{
+  border-bottom: 1px solid #333;
+}
+
+/* font-size */
+.f12 {
+	font-size: 12px;
+}
+.f14 {
+	font-size: 14px;
+}
+.f16 {
+	font-size: 16px;
+}
+.f18 {
+	font-size: 18px;
+}
+.f20 {
+	font-size: 20px;
+}
+.f22 {
+	font-size: 22px;
+}
+.f24 {
+	font-size: 24px;
+}
+.f26{
+  font-size: 26px;
+}
+.f32{
+  font-size: 32px;
+}
+
+.f36{
+  font-size: 36px;
+}
+.f48{
+  font-size: 48px;
+}
+
+/* float */
+.fr {
+	float: right;
+}
+
+.fl {
+	float: left;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ' ';
+  clear: both;
+  height: 0;
+}
+
+/* flex */
+.flex { display: flex; }
+
+
+.flex_c{
+  display: flex;
+  align-items: center;
+}
+
+.flex_c_c{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_sb{
+  display: flex;
+  justify-content: space-between;
+}
+.flex_sb_c{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex_end_c{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex_d{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_d_c{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex_d_c_c{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex_d_sb{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex1{
+  flex: 1;
+}
+
+/* cursor */
+.pointer {
+	cursor: pointer;
+}
+
+/* font-weight */
+.fw_bo{
+  font-weight: bold;
+}
+
+.fw_no{
+  font-weight: normal;
+}
+
+/* 模块title */
+.module_title {
+  margin-top: 112px;
+  text-align: center;
+}
+
+.module_title > .title {
+  line-height: 40px;
+}
+.module_title .title_line{
+  margin: 28px auto 0;
+  width:80px;
+  height:4px;
+  border-radius: 10px;
+  background: #00A6FD;
+}
+
+.module_title.white .title_line{
+  background: #fff;
+}
+.module_title.white > .title{
+  color: #fff;
+}
+
+@media (max-width: 768px){
+  .module_title {
+    margin-top: 56px;
+  }
+  .module_title .title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+.hide_text_1{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.hide_text_2{
+  overflow:hidden;
+  display: -webkit-box;
+  -webkit-line-clamp:2;
+  /*! autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+}
+
+.yellow_line::after{
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  border-radius: 10px;
+  background: #FFC500;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50px);
+}
+.background_color{
+  background-color: rgba(64,181,251,0.6) ;
+}
+
+.pulse.button { 
+  display: inline-block;
+  background: #f18b04;
+  height: 36px;
+  min-width: 170px;
+  line-height: 36px;
+  font-size: 14px;
+  white-space: nowrap;
+  color: #fff;
+  text-shadow: 1px 1px 0px #df7b0a;
+  text-align: center;
+  padding: 0 24px;
+  font-family: 'SourceHanSansCN-Medium';
+  border-radius: 20px;
+  animation-name: pulse; animation-duration: 1.8s; 
+  animation-iteration-count: infinite;
+  letter-spacing: 2px; 
+}
+@keyframes pulse {
+  from { background-color: #FFC500; -webkit-box-shadow: 0 0 9px #FFC500; }
+  50% { background-color: #FFC500; -webkit-box-shadow: 0 0 9px #F4D402; }
+  to { background-color: #FFC500; -webkit-box-shadow: 0 0 9px #FFC500; }
+}

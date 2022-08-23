@@ -1,0 +1,357 @@
+.my_container{
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1110px;
+  width: 100%;
+}
+
+/* banner */
+.banner_wrapper{
+  padding: 198px 0 112px;
+  background: url('../images/amzQ4Promote/banner_bg.jpg') no-repeat bottom left;
+  background-size: cover;
+}
+.banner_wrapper .content{
+  position: relative;
+}
+.banner_wrapper .card_bg{
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 606px;
+  height: 352px;
+  background: url('../images/amzQ4Promote/card_pic.png') no-repeat;
+  background-size: contain;
+}
+.banner_wrapper .t_tips{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #507390;
+}
+.banner_wrapper h2{
+  color: #333333;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 2px;
+}
+.banner_wrapper h2 .blue{
+  color: #00A6FD;
+}
+.banner_wrapper .apply_wrapper{
+  margin-top: 88px;
+}
+.banner_wrapper .apply_wrapper .icon{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #868686;
+  border-radius: 50%;
+  margin-right: 4px;
+  position: relative;
+}
+
+.banner_wrapper .apply_wrapper .icon::before{
+  content: '';
+  position: absolute;
+  transform: rotate(45deg);
+  content: "";
+  border: 1px solid #868686;
+  border-left: 0;
+  border-top: 0;
+  height: 8px;
+  left: 5px;
+  position: absolute;
+  top: 2px;
+  width: 4px;
+  transition: transform .15s ease-in .05s;
+  transform-origin: center;
+}
+.banner_wrapper .apply_wrapper .desc{
+  margin-bottom: 20px;
+  color: #868686;
+  line-height: 20px;
+}
+
+@media(max-width:991px){
+  .header_sec .contact_us{
+    display: none;
+  }
+  .banner_wrapper{
+    padding: 70px 0 10px;
+    background: url('../images/amzQ4Promote/banner_bg_m.jpg') no-repeat bottom left;
+    background-size: cover;
+  }
+  .banner_wrapper .title_wrapper{
+    padding-left: 16px;
+  }
+  .banner_wrapper .content{
+    padding: 26px  10px 0 20px;
+  }
+  .banner_wrapper .t_tips{
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 6px;
+  }
+  .banner_wrapper h2{
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .banner_wrapper .t_item{
+    display: block;
+  }
+  .banner_wrapper .card_bg{
+    position: relative;
+    margin: 50px auto 0;
+    top: 0px;
+    right: 0;
+    width: 282px;
+    height: 164px;
+    background: url('../images/amzQ4Promote/card_pic_m.png') no-repeat;
+    background-size: contain;
+  }
+  .banner_wrapper .apply_wrapper{
+    margin-top: 26px;
+    text-align: center;
+  }
+}
+
+/* 卡特点 */
+.card_features_sec{
+  padding-bottom: 102px;
+  text-align: center;
+}
+.card_features_sec .item{
+  margin-top: 102px;
+}
+.card_features_sec .is_border{
+  border-right: 1px solid #D8D8D8;
+}
+.card_features_sec .img_box{
+  display: inline-block;
+  width: 70px;
+  height: 62px;
+}
+.card_features_sec .img_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.card_features_sec .t{
+  margin: 16px 0 8px;
+  color: #333333;
+  line-height: 20px;
+}
+.card_features_sec .desc{
+  color: #868686;
+  line-height: 20px;
+}
+
+@media(max-width:991px){
+  .card_features_sec{
+    padding-bottom: 56px;
+  }
+  .card_features_sec .item{
+    margin-top: 52px;
+  }
+  .card_features_sec .is_border.m_hide{
+    border-right: none;
+  }
+  .card_features_sec .img_box{
+    width: 54px;
+    height: 50px;
+  }
+  .card_features_sec .t{
+    margin: 8px 0;
+  }
+}
+/* 为什么使用Skyee天易卡 */
+.why_use_sec{
+  background: #F5F9FC;
+  overflow: hidden;
+}
+.why_use_inner{
+  padding-top: 56px;
+  padding-bottom: 60px;
+}
+.why_use_sec .use_item{
+  margin-bottom: 64px;
+  display: flex;
+}
+.why_use_sec .use_item:last-child{
+  margin-bottom: 0;
+}
+.why_use_sec .img_box{
+  margin-right: 24px;
+  width: 60px;
+  height: 60px;
+}
+.why_use_sec .img_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.why_use_sec .text{
+  padding: 4px 0;
+  line-height: 22px;
+}
+.why_use_sec .t{
+  color: #333;
+}
+.why_use_sec .desc{
+  color: #868686;
+}
+.why_use_sec .flow_wrapper{
+  padding-top: 30px;
+}
+.why_use_sec .banner_img{
+  width: 100%;
+  height: 100%;
+}
+.why_use_sec .banner_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media(max-width:991px){
+  .why_use_inner{
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+  }
+  .why_use_sec .use_item{
+    margin-bottom: 50px;
+  }
+  .why_use_sec .flow_wrapper{
+    padding-top: 50px;
+  }
+}
+
+/* 三步开卡 */
+.open_card_sec{
+  padding-bottom: 64px;
+}
+.open_card_menu{
+  padding-top: 50px;
+  padding-bottom: 56px;
+  text-align: center;
+}
+.open_card_menu .img_box{
+  display: inline-block;
+  width: 182px;
+  height: 160px;
+}
+.open_card_menu .img_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+.open_card_menu .is_line{
+  position: relative;
+}
+.open_card_menu .is_line::before{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(100%,-50%);
+  height: 2px;
+  width: 176px;
+  background-image: repeating-linear-gradient(
+90deg
+, #D8D8D8, #D8D8D8 4px,transparent 4px, transparent 8px);
+}
+.apply_warpper{
+  text-align: center;
+}
+@media(max-width:991px){
+  .open_card_menu{
+    padding-top: 20px;
+  }
+  .open_card_menu .is_line::before{
+    display: none;
+  }
+  .open_card_menu .is_bottom{
+    margin-bottom: 80px;
+    position: relative;
+  }
+  .open_card_menu .is_bottom::before{
+    content: '';
+    position: absolute;
+    bottom: -20PX;
+    left: 50%;
+    transform: translate(-50%,100%);
+    height: 80px;
+    width: 2px;
+    background-image: repeating-linear-gradient( #DBDBDB, #DBDBDB 4px,transparent 4px, transparent 8px);
+  }
+}
+/* 支付新体验 */
+.join_us_sec{
+  padding: 60px 80px 60px;
+  background: url('../images/amzQ4Promote/join_us_bg.jpg') no-repeat top right;
+  background-size: cover;
+}
+.join_us_sec .t{
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.join_us_sec .line{
+  display: inline-block;
+  width: 70px;
+  height: 3px;
+  background: #fff;
+  /* transform: rotate(2deg); */
+}
+.join_us_sec .my_button{
+  margin-top: 4px;
+}
+
+@media(max-width:991px){
+  .join_us_sec{
+    padding: 26px 10px 20px;
+    background: url('../images/amzQ4Promote/join_us_bg_m.jpg') no-repeat top right;
+    background-size: cover;
+    text-align: center;
+  }
+  .join_us_sec .line{
+    display: none;
+  }
+  .join_us_sec .t{
+    display: block;
+    margin-bottom: 18px;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  .join_us_sec .t_item{
+    display: block;
+  }
+}
+/* footer */
+.footer{
+  background: #F5F9FC;
+  padding: 24px 0;
+  text-align: center;
+}
+.footer .img_box{
+  display: inline-block;
+  height: 34px;
+}
+.footer .img_box img{
+  height: 100%;
+  object-fit: contain;
+}
+@media(max-width:991px){
+  .footer{
+    padding: 20px 0;
+  }
+  .footer .img_box{
+    height: 26px;
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "2662603",
+  "name": "落地页",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10143833",
+      "name": "点赞",
+      "font_class": "zan",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "16299574",
+      "name": "WeChat",
+      "font_class": "WeChat",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "16300712",
+      "name": "知乎",
+      "font_class": "zhihu",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "22771157",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    }
+  ]
+}

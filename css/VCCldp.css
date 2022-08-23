@@ -1,0 +1,380 @@
+.my_container{
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1110px;
+  width: 100%;
+}
+/* 公用title */
+.card_module_title{
+  margin-top: 120px;
+  text-align: center;
+}
+.card_module_title h3{
+  display: inline-block;
+  font-size: 28px;
+  line-height: 28px;
+  color: #333333;
+  position: relative;
+  background-position: bottom;
+}
+.card_module_title h3::before{
+  content:'';
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 354px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(270deg, rgba(160, 214, 251, 0) 0%, rgba(0,166,253,0.27) 60%, rgba(173, 218, 251, 0) 100%);
+  z-index: -1;
+}
+.card_module_title h3 sup{
+  position: absolute;
+  right: -10px;
+  top: 0;
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #333;
+}
+@media(max-width:991px){
+  .card_module_title{
+    margin-top: 60px;
+  }
+  .card_module_title h3{
+    font-size: 22px;
+  }
+  .card_module_title h3::before{
+    width: 286px;
+  }
+  .card_module_title h3 sup{
+    right: -6px;
+    width: 4px;
+    height: 4px;
+  }
+}
+/* banner */
+.top_sec{
+  /* min-height: 966px; */
+  padding-bottom: 46px;
+  background: url('../images/VCCldp/banner_bg.jpg') no-repeat center right;
+  background-size: cover;
+}
+.banner_sec .content{
+  position: relative;
+  padding: 70px 0 88px 46px;
+}
+.banner_sec .card_bg{
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 568px;
+  height: 322px;
+  background: url('../images/VCCldp/card_pic.png') no-repeat;
+  background-size: contain;
+}
+.banner_sec .t_tips{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #00FDFF;
+}
+.banner_sec h2{
+  font-size: 70px;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 80px;
+  text-shadow: 3px 3px 0px #055882;
+}
+.banner_sec .tag {
+  margin-top: 20px;
+  display: flex;
+  white-space: nowrap;
+}
+.banner_sec .tag_item{
+  color: #fff;
+  font-size: 18px;
+  padding: 6px 65px 6px 26px ;
+  background: linear-gradient(90deg, rgba(0,50,192,0.55) 0%, rgba(0, 43, 186, 0) 100%);
+  border-radius:20px;
+}
+.banner_sec .tag_item.cover{
+  margin-left: -60px;
+}
+.banner_sec .tag_item .sign{
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFC500;
+}
+.banner_sec .activity_time{
+  margin-top: 80px;
+}
+.banner_sec .activity_time .my_button{
+  font-size: 16px;
+  font-weight: 600;
+}
+.banner_sec .activity_time .time{
+  margin-top: 20px;
+  color: #fff;
+}
+
+/* banner use type */
+.use_type_menu{
+  padding: 52px 60px;
+  background: rgba(0,56,98,0.3); 
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+}
+.use_type_menu .img_box{
+  display: inline-block;
+  width: 82px;
+  height: 62px;
+}
+.use_type_menu .img_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.use_type_menu .t{
+  margin: 16px 0 8px;
+}
+.use_type_menu .dec{
+  line-height: 20px;
+}
+@media(max-width:991px){
+  .header_sec .contact_us{
+    display: none;
+  }
+  .top_sec{
+    padding-bottom: 40px;
+    background: url('../images/VCCldp/banner_bg_m.jpg') no-repeat center right;
+    background-size: cover;
+  }
+  .banner_sec .content{
+    padding: 30px  20px 40px 30px;
+  }
+  .banner_sec .t_tips{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .banner_sec h2{
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .banner_sec .tag_item{
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 52px 6px 16px ;
+  }
+  .banner_sec .tag_item.cover{
+    margin-left: -45px;
+  }
+  .banner_sec .tag_item .sign{
+    font-size: 16px;
+  }
+  .banner_sec .card_bg{
+    position: relative;
+    margin: 30px auto 0;
+    top: 0px;
+    right: 0;
+    width: 282px;
+    height: 164px;
+    background: url('../images/VCCldp/card_pic_m.png') no-repeat;
+    background-size: contain;
+  }
+  .banner_sec .activity_time{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .banner_sec .activity_time .my_button{
+    font-size: 14px;
+  }
+  .banner_sec .activity_time .time{
+    margin-top: 12px;
+  }
+  .use_type_menu{
+    padding: 0 14px 30px;
+  }
+  .use_type_menu .use{
+    position: relative;
+    margin-top: 30px;
+  }
+  .use_type_menu .is_border::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 85%;
+    background: #dbdbdb;
+  }
+  .use_type_menu .img_box{
+    width: 52px;
+    height: 40px;
+  }
+  .use_type_menu .t{
+    margin: 10px 0 8px;
+  }
+  .use_type_menu .dec{
+    line-height: 18px;
+  }
+}
+
+/* 三步开卡 */
+.open_card_menu{
+  padding-top: 50px;
+  padding-bottom: 56px;
+  text-align: center;
+}
+.open_card_menu .img_box{
+  display: inline-block;
+  width: 182px;
+  height: 160px;
+}
+.open_card_menu .img_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+.open_card_menu .is_line{
+  position: relative;
+}
+.open_card_menu .is_line::before{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(100%,-50%);
+  height: 2px;
+  width: 176px;
+  background-image: repeating-linear-gradient(
+90deg
+, #D8D8D8, #D8D8D8 4px,transparent 4px, transparent 8px);
+}
+.apply_warpper{
+  text-align: center;
+}
+.apply_warpper .my_button{
+  font-size: 16px;
+  font-weight: 600;
+}
+.apply_warpper .time{
+  margin-top: 20px;
+  color: #868686;
+}
+@media(max-width:991px){
+  .open_card_menu{
+    padding-top: 20px;
+  }
+  .open_card_menu .is_line::before{
+    display: none;
+  }
+  .open_card_menu .is_bottom{
+    margin-bottom: 80px;
+    position: relative;
+  }
+  .open_card_menu .is_bottom::before{
+    content: '';
+    position: absolute;
+    bottom: -20PX;
+    left: 50%;
+    transform: translate(-50%,100%);
+    height: 80px;
+    width: 2px;
+    background-image: repeating-linear-gradient( #DBDBDB, #DBDBDB 4px,transparent 4px, transparent 8px);
+  }
+  .apply_warpper .my_button{
+    font-size: 14px;
+  }
+  .apply_warpper .time{
+    margin-top: 10px;
+  }
+}
+
+/* 优惠说明 */
+.offer_desc_inner{
+  padding: 56px 32px 110px;
+}
+.offer_desc_inner .desc{
+  color: #868686;
+  line-height: 22px;
+}
+.table_wrapper{
+  table-layout: fixed;
+  margin: 20px 0;
+  border-left: 1px solid #D8D8D8;
+  border-top: 1px solid #D8D8D8;
+  text-align: center;
+  font-size: 14px;
+  color: #868686;
+  
+}
+.table_wrapper th,
+.table_wrapper td{
+  padding: 10px 4px;
+  line-height: 20px;
+}
+.table_wrapper table{
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table_wrapper th{
+  background: #EDF6FF;
+}
+.table_wrapper th,
+.table_wrapper td{
+  border-right: 1px solid #D8D8D8;
+  border-bottom: 1px solid #D8D8D8;
+}
+.open_card_fees_inner{
+  display: inline-block;
+  text-align: left;
+}
+.table_wrapper .cur_item{
+  margin-right: 10px;
+  line-height: 22px;
+}
+.table_wrapper .cur_item:last-child{
+  margin-right: 0;
+}
+
+.table_wrapper .is_hover{
+  color: #00A6FD;
+}
+.offer_desc_inner .bottom_desc{
+  color: #BFBFBF;
+  line-height: 20px;
+}
+@media(max-width:991px){
+  .offer_desc_inner{
+    padding: 40px 10px 60px;
+  }
+}
+/* footer */
+.footer{
+  background: #F5F9FC;
+  padding: 24px 0;
+  text-align: center;
+}
+.footer .img_box{
+  display: inline-block;
+  height: 34px;
+}
+.footer .img_box img{
+  height: 100%;
+  object-fit: contain;
+}
+@media(max-width:991px){
+  .footer{
+    padding: 20px 0;
+  }
+  .footer .img_box{
+    height: 26px;
+  }
+}

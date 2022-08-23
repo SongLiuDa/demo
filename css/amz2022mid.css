@@ -1,0 +1,532 @@
+@-webkit-keyframes two-up-down {
+  0% {
+    -webkit-transform: translate(0, 6px);
+    transform: translate(0, 6px);
+  }
+  100% {
+    -webkit-transform: translate(0, -6px);
+    transform: translate(0, -6px);
+  }
+}
+@keyframes two-up-down {
+  0% {
+    -webkit-transform: translate(0, 6px);
+    transform: translate(0, 6px);
+  }
+  100% {
+    -webkit-transform: translate(0, -6px);
+    transform: translate(0, -6px);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  70% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  70% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+
+._button{
+  display: block;
+  margin: 0 auto;
+  width: 148px;
+  font-weight: 600;
+  height: 46px;
+  line-height: 46px;
+  color: #1D2947;
+  background: linear-gradient(360deg, #FFC347 0%, #FFF5AA 100%);
+  border-radius: 32px;
+  text-align: center;
+  position: relative;
+}
+
+._button span{
+  position: relative;
+  z-index: 1;
+}
+._button::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(360deg, #FF8319 0%, #FFCB98 100%);
+  border-radius: 32px;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
+._button:hover{
+  color: #1D2947;
+}
+._button:hover:before{
+  opacity: 1;
+}
+
+
+.my_container{
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 664px;
+  width: 100%;
+}
+
+._container{
+  max-width: 1080px;
+}
+
+.amz_welfare-page{
+  background: url('../images/amz2022mid/bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media (max-width: 768px){
+  .amz_welfare-page{
+    background: url('../images/amz2022mid/bg_m.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+/* heaser */
+.header_inner {
+  height: 70px;
+}
+
+.header_inner .logo {
+  width: 220px;
+  height: 38px;
+  font-size: 0;
+}
+
+.header_inner .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media (max-width: 768px){
+  .header_inner .logo {
+    width: 70px;
+    height: 36px;
+  }
+  .header_inner .logo .pc{
+    display: none;
+  }
+  .header_inner .logo .mobile{
+    display: block;
+  }
+  .header_inner .contact{
+    display: none;
+  }
+}
+
+.header_inner .nav_item {
+  color: #fff;
+  white-space: nowrap;
+  padding: 8px 12px;
+}
+
+/* banner_sec */
+.banner{
+  height: 890px;
+  padding-top: 70px;
+  background: url('../images/amz2022mid/banner.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+}
+.banner .label{
+  display: inline-block;
+  color: #75EBFF;
+  font-size: 18px;
+  line-height: 36px;
+  background: rgba(54,107,210, 0.2);
+  padding: 0 36px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-family: 'AlibabaPuHuiTiM';
+}
+
+.banner .time{
+  position: absolute;
+  right: 200px;
+  bottom: 140px;
+  color: #fff;
+  line-height: 22px;
+}
+
+.banner .gold_left{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 430px;
+  left: 334px;
+  background: url('../images/amazonQ4/gold_left.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-animation: two-up-down 0.8s ease infinite 80ms alternate;
+  animation:  two-up-down 0.8s ease infinite 80ms alternate;
+  z-index: 99;
+}
+.banner .gold_right{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 222px;
+  bottom: 225px;
+  background: url('../images/amazonQ4/gold_right.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-animation: two-up-down 0.8s ease infinite 80ms alternate;
+  animation:  two-up-down 0.8s ease infinite 80ms alternate;
+  animation-delay: .5s;
+  z-index: 99;
+}
+@media (max-width: 992px){
+  .banner .gold_left{
+    width: 40px;
+    height: 40px;
+    left: 35px;
+    top: 290px;
+  }
+  .banner .gold_right{
+    width: 50px;
+    height: 50px;
+    right: 45px;
+    bottom: 110px;
+  }
+  .banner .time{
+    white-space: nowrap;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 30px;
+  }
+}
+@media (max-width: 768px){
+  .banner_sec ._container{
+    padding: 0;
+  }
+  .banner{
+    height: 620px;
+    padding-top: 0;
+    background: url('../images/amz2022mid/banner_m.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* 如何获取0费率 */
+.get_rate_sec {
+  margin-top: -90px;
+  padding-bottom: 50px;
+}
+.get_rate_sec .title h3{
+  color: #fff;
+  font-weight: bold;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-align: center;
+} 
+.get_rate_sec .steps{
+  background: rgba(0,145,255, 0.12);
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px 20px 24px;
+}
+.step_item{
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+}
+.step_item .title{
+  font-weight: 500;
+}
+.step_item .img_box{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.step_item .img_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.step_item .img_box.line::before{
+  content: '';
+  display: block;
+  position: absolute;
+  right: -6px;
+  bottom: 24px;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(100%);
+  width: 88px;
+  height: 2px;
+  background-image:repeating-linear-gradient(90deg, #979797, #979797 4px,transparent 4px, transparent 8px);
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 768px){
+  .get_rate_sec{
+    margin-top: 36px;
+    padding-bottom: 0;
+  }
+  .get_rate_sec .title h3{
+    font-size: 20px;
+    line-height: 32px;
+  } 
+  .get_rate_sec .steps{
+    padding: 0;
+    background: transparent;
+    margin: 50px auto 0 !important;
+  }
+  .step_item{
+    margin-bottom: 70px;
+  }
+  .step_item .img_box.line::before{
+    display: none;
+  }
+  .step_item{
+    position: relative;
+    padding-bottom: 8px;
+  }
+  .step_item.line::before{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    width: 2px;
+    height: 70px;
+    background-image:repeating-linear-gradient( #979797, #979797 4px,transparent 4px, transparent 8px);
+    background-position: center;
+    background-size: cover;
+  }
+  .get_rate_sec ._button{
+    display: none;
+  }
+}
+/* Skyee 跨境生态收付服务提供商  */
+.provider_sec{
+  padding: 30px 0;
+  background: linear-gradient(127deg, rgba(24,132,200,0.2) 0%, rgba(66,13,196,0.2) 100%);
+  box-shadow: inset -6px -24px 36px 9px rgba(8, 101, 154, 0.22);
+  text-align: center;
+}
+.provider_sec .title h3{
+  color: #fff;
+  font-weight: bold;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-align: center;
+} 
+.provider_inner {
+  margin-top: 30px;
+}
+.provider_item .img_box{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 10px;
+}
+.provider_item .img_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.provider_item .t{
+  color: #32C5FF;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.provider_item .desc{
+  color: #fff;
+  line-height: 22px;
+}
+@media (max-width: 992px){
+  .provider_sec{
+    padding-bottom: 0;
+  }
+  .provider_sec h3{
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .provider_sec h3 span{
+    display: block;
+  }
+  .provider_item{
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: center; */
+    padding-left: 60px;
+    margin-bottom: 40px;
+  }
+  .provider_item .text{
+    text-align: left;
+  }
+  .provider_item .img_box{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0;
+    margin-right: 28px;
+  }
+}
+/* 活动规则 */
+.activity_rules{
+  padding-top: 46px;
+}
+.activity_rules .title{
+  text-align: left;
+  color: #fff;
+  line-height: 32px;
+}
+.rules_item{
+  margin-top: 26px;
+  text-align: left;
+  color: #fff;
+  line-height: 22px;
+}
+.rules_item .p{
+  padding-left: 10px;
+}
+.rules_item .dot{
+  padding-left: 10px;
+  position: relative;
+}
+.rules_item .dot::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 2px;
+  top: 10px;
+  width: 2px;
+  height: 2px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/* 咨询客服 */
+.consult_service_sec{
+  padding: 60px 0 100px;
+}
+.consult_service_sec .my_container{
+  position: relative;
+  z-index: 9;
+}
+.consult_service_sec .inner{
+  height: 136px;
+  color: #fff;
+  background: #FD8461;
+  background-image: linear-gradient(0deg,#7285F1,#8DDAFD);
+  border-radius: 20px;
+  padding: 22px 50px 14px 50px;
+}
+.consult_service_sec .weChat{
+  text-align: center;
+}
+.consult_service_sec .card_l{
+  line-height: 36px;
+}
+.consult_service_sec .card_l .iconfont{
+  font-size: 20px;
+}
+
+.ellipse_wrapper{
+  margin: 0 auto;
+  max-width: 844px;
+  width: 100%;
+  position: relative;
+}
+.consult_service_sec .ellipse{
+  margin-top: -76px;
+  border-radius: 50%;
+  width: 100%;
+  height: 136px;
+  background: linear-gradient(110deg, rgba(226, 249, 255, 0) 0%, #80CBF3 55%, rgba(194, 242, 255, 0) 100%);
+  opacity: 0.2;
+}
+@media (max-width: 768px){
+  .activity_rules{
+    padding: 46px 15px 0;
+  }
+  .consult_service_sec{
+    padding: 60px 0 70px;
+  }
+  .consult_service_sec .inner,
+  .ellipse_wrapper {
+    display: none;
+  }
+}
+@media (max-width: 768px){
+  .mobile_float{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(0, 0, 0, 0.25);
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
+    text-align: center;
+  }
+  .mobile_float .button{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    min-width: 250px;
+    padding: 0 12px;
+    color: #1D2947;
+    font-weight: 500;
+    text-align: center;
+    background: linear-gradient(180deg, #FFF5AA 0%, #FFC347 100%);
+    border-radius: 50px;
+    box-shadow: 0px 0px 21px 0px rgba(255, 249, 228, 0.43);
+  }
+}
