@@ -11,6 +11,10 @@
   width: 100%;
   /* position: relative; */
 }
+.header_sec.has_bg{
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(202,202,202,0.5);
+}
 
 .header_inner {
   height: 70px;
@@ -29,14 +33,17 @@
 }
 @media (max-width: 768px){
   .header_inner .logo {
-    width: 70px;
-    height: 36px;
+    width: 162px;
+    height: 30px;
   }
-  .header_inner .logo .pc{
+  /* .header_inner .logo .pc{
     display: none;
-  }
-  .header_inner .logo .mobile{
+  } */
+  /* .header_inner .logo .mobile{
     display: block;
+  } */
+  .header_inner .contact_us{
+    display: none;
   }
 }
 

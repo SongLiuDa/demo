@@ -121,6 +121,16 @@ textarea:-ms-input-placeholder{
   color:#D8D8D8;
 }
 
+input.white::-webkit-input-placeholder{
+  color:#fff;
+}
+input.white::-moz-placeholder{
+  color:#fff;
+}
+input.white:-ms-input-placeholder{
+  color:#fff;
+}
+
 li {
 	list-style: none;
 }
