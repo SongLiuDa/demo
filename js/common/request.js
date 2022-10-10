@@ -9,7 +9,7 @@
 const BASE_URL = 'https://global.skyee360.com/api/v1/'
 const ajax = function (param, success, error) {
   $.ajax({
-    url: BASE_URL + param.url,
+    url: (param.basUrl || BASE_URL) + param.url,
     headers:{
       'X-Language':'ZH'
     },
