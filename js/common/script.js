@@ -97,6 +97,7 @@ $(function () {
   // 微信分享缩略图
   let param = {
     url: 'WxSignature',
+    basUrl:'https://global.skyee360.com/api/v1/',
     data: {
       url: window.location.href
     }

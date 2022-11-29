@@ -6,10 +6,9 @@
  * @param {Function} success 成功回调
  * @param {Function} error 失败回调
  */
-const BASE_URL = 'https://global.skyee360.com/api/v1/'
 const ajax = function (param, success, error) {
   $.ajax({
-    url: (param.basUrl || BASE_URL) + param.url,
+    url: param.basUrl + param.url,
     headers:{
       'X-Language':'ZH'
     },

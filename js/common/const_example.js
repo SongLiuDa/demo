@@ -1,0 +1,1 @@
+const BUSINESS_BASE_URL = 'http://business.test218.skyee360.xyz/api/v1/'

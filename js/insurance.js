@@ -47,13 +47,14 @@ $(function ($) {
     }
     let param = {
       url: 'ClientSpecial',
-      basUrl:'https://business.skyee360.com/api/v1/',
-      data: {
+      basUrl: BUSINESS_BASE_URL,
+      type:'post',
+      data: JSON.stringify({
         custId: getCustId(),
         insureServiceProvider: 1, // 中国人保
         contacts: contacts, // 联系人
         contactNumber: phone, // 手机
-      }
+      })
     }
     ajax(param, function success(res) {
       // console.log('分享',res);
