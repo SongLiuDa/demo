@@ -62,11 +62,9 @@
   color: #fff;
   background: #38bbff;
 }
-.skyRemit{
-  position: relative;
-}
+
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;

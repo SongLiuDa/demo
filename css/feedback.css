@@ -1,0 +1,90 @@
+.page{
+  padding: 40px;
+}
+.my_container{
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 3px 5px 0px #E7E9EF;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.header{
+  width: 100%;
+  height: 110px;
+}
+.header img{
+  width: 100%;
+  object-fit: cover;
+}
+.content{
+  padding: 70px 60px 90px;
+}
+.wrapper{
+  margin-bottom: 60px;
+}
+.wrapper:last-child{
+  margin-bottom: 16px;
+}
+.wrapper .title{
+  color: #333;
+  margin-bottom: 16px;
+  line-height: 24px;
+}
+.wrapper .desc-wrapper{
+  color: #666;
+  line-height: 24px;
+}
+.wrapper .desc-wrapper .dark{
+  color: #333;
+}
+.wrapper .desc-wrapper .mb8{
+  margin-bottom: 8px;
+}
+.content .tips{
+  line-height: 24px;
+  color: #999;
+}
+.content .tips a{
+  color: #00A6FD;
+}
+.content .tips a:hover,
+.content .tips a:active{
+  color: #38bbff;
+}
+.footer{
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+}
+.footer img{
+  width: 100%;
+  object-fit: cover;
+}
+@media(max-width:992px){
+  .page{
+    padding: 20px;
+  }
+  .content{
+    padding: 20px 16px 20px;
+  }
+  .wrapper{
+    margin-bottom: 20px;
+  }
+  .wrapper .title{
+    margin-bottom: 10px;
+  }
+  .wrapper .desc-wrapper .mb8{
+    margin-bottom: 0;
+  }
+  .header{
+    height: auto;
+  }
+  .header .logo .pc{
+    display: none;
+  }
+  .header .logo .mobile{
+    display: block;
+  }
+}

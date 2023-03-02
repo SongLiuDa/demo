@@ -14,4 +14,15 @@ $(function ($) {
       index++
     }
   }, 2000)
+  let headerHeight = $('#header')[0].clientHeight
+  $(document).scroll(function(){
+    var offset= $(document).scrollTop()
+    var opacity
+    // if(offset <= 70){
+      opacity = Math.min(offset, headerHeight) / headerHeight;
+      $('#header').css({
+        'background-color': 'rgba(255,255,255,' + opacity
+      })
+    // }
+  })
 })
